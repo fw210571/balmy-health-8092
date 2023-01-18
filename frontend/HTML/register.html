@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/x-icon" href="https://i.postimg.cc/NjT18VSX/Untitled-design.png"> 
+    <link rel="stylesheet" href="../CSS/styles.css">
+    <link rel="stylesheet" href="../CSS/register.css">
+    <title>register</title>
+</head>
+<body>
+    <div id="fixed">
+        <div id="navBar">
+                  
+            <!-- logo div -->
+           <div id="logo-div" >
+                 <img src="https://i.postimg.cc/gjjhwcfV/ABODEArt.png" alt="LOGO">
+           </div>
+              
+           <!-- Search bar div  -->
+           <div id="search-div" >
+                <h3>SEARCH</h3>
+                <hr>
+                <input id="search-input" type="text" placeholder="try 'paint' ...">
+                <img class="icon" src="https://img.icons8.com/external-tanah-basah-basic-outline-tanah-basah/512/external-search-social-media-ui-tanah-basah-basic-outline-tanah-basah.png" alt="search">
+           </div>
+
+           <!-- location div -->
+           <div id="location-div" >
+
+                <img class="icon" src="https://img.icons8.com/material-sharp/512/marker.png" alt="location">
+                <p id="location" data-place="" > ?delhi </p>
+           </div>
+
+           <!-- Icon div -->
+           <div id="icon-div" >
+           
+                  <!-- wishlist logo -->
+                 <div id="wish-logo" >
+                     <img class="icon" src="https://img.icons8.com/tiny-glyph/512/hearts.png" alt="wishlist">
+                 </div>
+
+                  <!-- cart logo -->
+                 <div id="cart-logo">
+                    <img class="icon" src="https://img.icons8.com/material-rounded/512/shopping-cart.png" alt="cart">
+                 </div>
+
+           </div>
+  </div>
+  <!-- second fixed nav bar --> 
+  <div id="nav-fix">
+      <p id="decoration"  data-deco="decoration" value = "decoration" > HOME DECORATION </p>
+      <p id="nearme" data-nearme="Delhi"  > PRODUCT NEAR ME </p>
+  </div>
+
+    </div>
+    <!-- Register box -->
+    <div id="register-box"  >
+
+            <!--  first box for image  -->
+           <div>
+             <img src="https://i.postimg.cc/Zq4DMB7j/WAY-OF-HOME.png" alt="IMAGE">
+           </div>
+
+           <!-- second box for register form -->
+           <div> 
+             <form id="register-form">
+                <h1 > Register </h1>
+
+                <!-- name -->
+                <label for="name"> Full Name : </label>
+                <input type="text" placeholder="Full Name" id="name" required > <br>
+
+                <!-- email -->
+                <label for="email"> Email : </label>
+                <input type="email" placeholder="Email" id="email" required> <br>
+
+                <!-- password -->
+                <label for="password"> Password : </label>
+                <input type="password" placeholder="Password" id="password" required> <br>
+
+                <!-- city -->
+                <label for="city"> City : </label>
+                <input type="text" placeholder="City" id="city" > <br>
+
+                <button id="register-button" > Register </button>
+
+             </form>
+           </div>
+
+    </div>
+    
+</body>
+</html>
+
+<script src="../JS/index.js" >
+</script>
+<script src="../JS/register.js" >
+</script>

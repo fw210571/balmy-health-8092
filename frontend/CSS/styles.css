@@ -1,0 +1,90 @@
+*{
+    margin: 0 ;
+    padding: 0 ;
+}
+
+
+/* navigation bar Styling */
+#navBar{
+    top:0;
+    display: flex ; 
+    flex-direction: row ;
+    align-items: center;
+    width: 100%;
+    height: 60px;
+    background-color: white;
+}
+.icon{
+    height: 25px;
+    padding: 5px;
+}
+.icon:hover{
+    cursor:pointer;
+    background-color: rgb(255, 244, 231);
+
+}
+#logo-div > img{
+    height: 60px;
+    margin-left: 10px;
+}
+#search-div , #location-div , #icon-div , #account{
+    display: flex ; 
+    flex-direction: row ;
+    align-items: center;
+    gap: 5px;
+}
+#search-div{
+    margin-left: 5%;
+    height: 40px ;
+    padding-left: 10px;
+    padding-right: 10px;
+    background-color: antiquewhite;
+    border-radius: 4px;
+}
+#search-div >img:hover{
+    background-color: antiquewhite;
+}
+#search-div > input{
+    height: 30px;
+    width: 300px;
+    background-color: antiquewhite;
+    border-color: antiquewhite;
+    border-style: none;
+    font-size: 14px;
+}
+#location-div{
+     margin-left: 4%;
+     width: 200px ;
+}
+#icon-div {
+    margin-left: 20%;
+    gap: 35px;
+}
+
+
+/* Nav fix styling */
+#fixed{
+position:fixed;
+width: 100%;
+}
+#nav-fix{
+    background-color: rgb(180, 1, 1) ;
+    height: 40px;
+    width: 100%;
+    display: flex ;
+    flex-direction: row ;
+    color: whitesmoke; 
+    font-style: italic ;
+    font-weight: bold;
+    font-size: 17px;
+    align-items: center ;
+    justify-content: center;
+    gap: 30px;
+}
+#nav-fix > p{
+    padding: 10px;
+}
+#nav-fix > p:hover{
+    background-color: green ;
+    cursor: pointer; 
+}
