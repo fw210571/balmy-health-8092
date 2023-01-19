@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/x-icon" href="https://i.postimg.cc/NjT18VSX/Untitled-design.png"> 
+    <title>MY ABODE | Admin site</title>
+    <style>
+        *{
+            text-align: center;
+           
+        }
+        #info{
+            display: flex ;
+            flex-direction: row;
+            align-items: center;
+            justify-content: space-evenly;
+        }
+        button{
+          height: 40px ;
+          width: 100px ;
+          margin: 40px;
+          background-color: brown;
+          color: white  ;
+          border-color: white;
+          border-radius: 8px;
+        }
+        button:hover{
+            background-color: rgb(237, 0, 0);
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+      <div id="info">
+        <img src="https://i.postimg.cc/gjjhwcfV/ABODEArt.png" alt="">
+        <h1>WELCOME ADMIN</h1>
+      </div>
+
+     <div >
+        <button  id="user-button" >  USERS  </button>
+     </div>
+
+     <div>
+        <button id="product-button" >  PRODUCTS  </button>
+     </div>
+</body>
+</html>
+<script>
+    const user_button = document.getElementById("user-button") ;
+
+    user_button.addEventListener("click" , ()=>{
+      window.location.href = "user.html" ;
+    })
+</script>

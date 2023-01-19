@@ -6,10 +6,9 @@ const { userRoute  } = require("./routes/userRoute") ;
 const { productRoute } = require("./routes/productRoute") ;
 const { authentication } = require("./midddlewares/authMiddleware") ;
 
-app.use(cors()) ;
 const app = express() ;
 app.use(express.json()) ;
-
+app.use(cors()) ;
 app.get("/" , async (req ,res)=>{
     res.send("Welcome to MyAbode") ;
 }) ;
