@@ -4,6 +4,7 @@
 }
 
 
+
 /* navigation bar Styling */
 #navBar{
     top:0;
@@ -62,6 +63,7 @@
 }
 
 
+
 /* Nav fix styling */
 #fixed{
 position:fixed;
@@ -74,8 +76,7 @@ width: 100%;
     display: flex ;
     flex-direction: row ;
     color: whitesmoke; 
-    font-style: italic ;
-    font-weight: bold;
+   
     font-size: 17px;
     align-items: center ;
     justify-content: center;
@@ -83,8 +84,395 @@ width: 100%;
 }
 #nav-fix > p{
     padding: 10px;
+    
 }
 #nav-fix > p:hover{
     background-color: green ;
     cursor: pointer; 
+}
+
+
+
+
+/* middle first ( category div ) Styling  */
+#category-div{
+    display: flex ;
+    flex-direction: column ;
+    padding-top: 100px;
+    align-items: center;
+}
+#ctg-1{
+    display: flex;
+    flex-direction: row;
+    margin-bottom: 10px;
+}
+#ctg-1 > h1:nth-child(2){
+    padding: 15px 15px 0px 15px ;
+    font-weight: lighter;
+    color: rgb(103, 103, 103);
+}
+
+#ctg-2 > img{
+    width: 300px;
+    border-radius: 10px;
+}
+#ctg-2 > img:hover{
+    box-shadow: rgba(0, 0, 0, 0.1) 0px 10px 50px;
+    cursor: pointer;
+}
+
+/* Slider */
+/* #TopInterval{
+    
+    width: 100%;
+    /* height: 300px; */
+  /* }
+
+  .swiper{
+    width: 100%;
+    height: 100%;
+  } */
+
+  /* .swiper-wrapper img{
+    width: 100%;
+    object-fit: contain;
+  }
+
+  .swiper .swiper-button-prev, .swiper .swiper-button-next{
+    color: white;
+  } */
+
+  /* .swiper .swiper-pagination-bullet-active{
+    background: white;
+  }
+
+
+  #TopInterval button{
+   background-color:#ff6186;
+   color: black;
+   border-color:#ff6186 ;
+  }
+  #TopInterval button:hover{
+    cursor: pointer;
+    background-color: black ;
+    color: #ff6186;
+  } */ 
+
+
+
+/* info styling */
+  #info{
+    display: flex;
+    flex-direction: row ;
+    align-items: center ;
+    justify-content: space-evenly;
+    background-color: black;
+
+  }
+  #info > img {
+    width: 80px ;
+    margin: 30px ;
+    border-radius: 50%;
+  }
+
+  /* mid-box img styling */
+  #img-div{
+    display: grid ;
+    grid-template-columns: repeat( 2  , 1fr );
+   
+    padding: 60px;
+    
+
+  }
+  #img-div > img {
+    width: 560px;
+    margin: auto;
+    padding: 70px;
+  }
+  #img-div > img:hover{
+    cursor: pointer;
+  }
+
+
+  /* Footer Styling */
+  #outterfooter {
+    background: white;
+    padding: 0 30px;
+    padding-top: 60px;
+    font-size: 11px;
+    line-height: 1.4em;
+    color: #000000;
+    border: rgb(224, 224, 224) solid 1px ;
+}
+
+#outterfooter h1 {
+    line-height: 1.4em;
+}
+#outterfooter div div div:hover , #outterfooter div div h2:hover{
+    color: rgb(180, 1, 1);
+    cursor: pointer;
+}
+.footer {
+    display: flex;
+    width: 90%;
+    margin: auto;
+    justify-content: space-between;
+}
+
+.one {
+    justify-content: space-around;
+    width: 20%;
+    height: 300px;
+}
+
+#social {
+    display: flex;
+    margin-top: 24px;
+}
+
+#social>div {
+    width: 30px;
+    height: 30px;
+    background-color: #504a49;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-right: 13px;
+    cursor: pointer;
+}
+
+#social>div>svg {
+    height: 15px;
+    fill: white;
+    
+}
+
+.two {
+    display: flex;
+    flex-direction: column;
+    height: 300px;
+    width: 23%;
+    line-height: 1.5;
+}
+
+.two>form {
+    margin-top: 23px;
+}
+
+.two input {
+    background-color: black;
+    border: none;
+    padding: 7px;
+    color: white;
+    font-size: 19px;
+    margin-top: 9px;
+    margin-bottom: 5px;
+}
+
+.two input:focus {
+    outline: 1px solid #2ba89f;
+}
+
+.two p {
+    color: #818181;
+    font-size: 10px;
+}
+
+.two button {
+    color: white;
+    background-color: #2ba89f;
+    padding: 9px;
+    display: block;
+    width: 80px;
+    border-radius: 3px;
+    cursor: pointer;
+    border: none;
+    margin-top: 6px;
+}
+
+.three {
+    width: 13%;
+    line-height: 2.2em;
+    font-size: 18px;
+}
+
+.four {
+    width: 25%;
+}
+
+.four img {
+    height: 49px;
+}
+
+
+hr {
+    opacity: .2;
+}
+
+@media all and (min-width:575px) and (max-width:1001px) {
+
+    .nav {
+        flex-direction: column;
+        margin: auto;
+        height: auto;
+    }
+
+    .nav>div {
+        margin: auto;
+    }
+
+    .nav>div img {
+        height: 40px;
+        margin-bottom: 23px;
+    }
+
+    #cards {
+        flex-direction: column;
+        align-items: center;
+        width: 90%;
+        height: auto;
+        margin: auto;
+        width: 90%;
+    }
+
+    .card {
+        width: 90%;
+        height: auto;
+        margin-bottom: 0px;
+    }
+
+    .twocards {
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    .onecard {
+        margin: auto;
+        width: 90%;
+        margin-bottom: 23px;
+        padding: 19px;
+
+    }
+
+    .invest-cards {
+        flex-direction: column;
+    }
+
+    .invest-cards img {
+        width: 100%;
+
+    }
+
+    .footer {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .one,
+    .two,
+    .three,
+    .four {
+        width: 90%;
+        height: auto;
+        margin: auto;
+        margin-bottom: 32px;
+    }
+}
+
+
+@media all and (max-width:574px) {
+
+    .nav {
+
+        flex-direction: column;
+        margin: auto;
+        height: auto;
+    }
+
+    .nav>div {
+        flex-direction: column;
+        margin: auto;
+    }
+
+    .nav>div>div {
+        margin-bottom: 6px;
+    }
+
+    .nav>div img {
+        height: 40px;
+        margin-bottom: 23px;
+    }
+
+    #cards {
+        flex-direction: column;
+        align-items: center;
+        width: 90%;
+        height: auto;
+        margin: auto;
+        width: 90%;
+    }
+
+    .card {
+        width: 90%;
+        height: auto;
+        margin-bottom: 0px;
+    }
+
+    .twocards {
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    .onecard {
+        margin: auto;
+        width: 90%;
+        margin-bottom: 23px;
+        height: auto;
+        padding: 19px;
+
+    }
+
+    .invest-cards {
+        flex-direction: column;
+    }
+
+    .invest-cards img {
+        width: 100%;
+    }
+
+    .heading {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .heading>button {
+        margin-top: 12px;
+        margin-bottom: 12px;
+    }
+
+    .content-moreinfo {
+        flex-direction: column;
+    }
+
+    .content-moreinfo>div {
+        margin-bottom: 10px;
+    }
+
+    
+
+    .footer {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .one,
+    .two,
+    .three,
+    .four {
+        width: 90%;
+        height: auto;
+        margin: auto;
+        margin-bottom: 32px;
+    }
 }
