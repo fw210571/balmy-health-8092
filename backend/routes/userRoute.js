@@ -14,7 +14,7 @@ userRoute.get("/" , async (req , res )=>{
         res.send( users ) ;
 
     }catch(err){
-        res.send("")
+        res.send({"error" : err })
     }
 } )
 

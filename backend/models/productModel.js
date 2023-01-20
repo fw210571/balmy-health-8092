@@ -5,7 +5,7 @@ const productSchema = mongoose.Schema({
     img : String ,
     price : Number ,
     category : String ,
-    location : String 
+    location : String  
 }) ;
 
 const ProductModel = mongoose.model("productsCollection" , productSchema ) ;
