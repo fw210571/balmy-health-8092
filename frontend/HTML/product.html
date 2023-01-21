@@ -6,12 +6,11 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="icon" type="image/x-icon" href="https://i.postimg.cc/NjT18VSX/Untitled-design.png"> 
     <link rel="stylesheet" href="../CSS/styles.css">
-    <title>MYABODE</title>
-
+    <link rel="stylesheet" href="../CSS/product.css">
+    <title>MY ABODE | Products</title>
 </head>
 <body>
-
-    <!-- just for make fix position of navbar -->
+    <!-- nav bar -->
     <div id="fixed">
         <div id="navBar">
                   
@@ -32,18 +31,12 @@
            <div id="location-div" >
 
                 <img class="icon" src="https://img.icons8.com/material-sharp/512/marker.png" alt="location">
-                <p id="location" data-place="" >Delhi </p>
+                <p id="location" data-place="" > ?delhi </p>
            </div>
 
            <!-- Icon div -->
            <div id="icon-div" >
-
-                  <!-- account logo -->
-                 <div id="account" >
-                     <img class="icon" src="https://img.icons8.com/windows/512/gender-neutral-user.png" alt="account"> 
-                     <p id="" data-status="register" > Register/login </p>
-                 </div>
-                 
+           
                   <!-- wishlist logo -->
                  <div id="wish-logo" >
                      <img class="icon" src="https://img.icons8.com/tiny-glyph/512/hearts.png" alt="wishlist">
@@ -59,72 +52,50 @@
   <!-- second fixed nav bar --> 
   <div id="nav-fix">
       <p id="decoration"  data-deco="decoration" value = "decoration" > HOME DECORATION </p>
-      <p id="nearme" data-nearme="Delhi" value = "delhi"  > PRODUCT NEAR ME </p>
+      <p id="nearme" data-nearme="Delhi"  > PRODUCT NEAR ME </p>
   </div>
 
     </div>
-   
-    <!-- Category Div -->
-    <div id="category-div">
-        <!-- first div of category -->
-        <div id="ctg-1">
 
-           <h1  >_______________</h1>
-            <h1  >Shop By Category</h1>
-           <h1>_______________</h1>
+    <!-- Products div -->
+    <div id="product-div">
+
+        <!-- filter div -->
+        <div id="filter-div">
+            <div id="" >
+                <p>sort price by</p>
+                <select name="sort by" id="filter-price">
+                    <option value="">Sort by</option>
+                    <option value="asc">Low to High</option>
+                    <option value="dec">High to Low</option>
+                </select>
+            </div>
+            <hr>
+           <div> 
+            <p>Category</p>
+            <select name="Category" id="filter-category">
+                <option value="">category</option>
+                <option value="bag">Bags</option>
+                <option value="decoration">Home Decoration</option>
+                <option value="mug">Mugs</option>
+                <option value="idol">Idols</option>
+            </select>
+           </div>
+
 
         </div>
 
-        <!-- Second div of category -->
-        <div id="ctg-2">
-
-            <img id="decoration_"  src="https://cdn.plotch.io/image/upload/C/V/1671109983_Mi5wbmc=.png" alt="home decoration" data-value="decoration" >
-
-            <img id="bag"  src="https://cdn.plotch.io/image/upload/C/V/1671109989_My5wbmc=.png" alt="Bags" data-value="bag">
-
-            <img id="kitchen"  src="https://cdn.plotch.io/image/upload/C/V/1671109994_NC5wbmc=.png" alt="Kitchen ware" data-value="kitchen">
-
-            <img  id="mug" src="https://cdn.plotch.io/image/upload/C/V/1671109999_NS5wbmc=.png" alt="Mugs" data-value="mug">
-
-            <img id="idol"  src="https://cdn.plotch.io/image/upload/C/V/1671110006_Ni5wbmc=.png" alt="Idols" data-value="idol">
-
+        <!-- show product div -->
+        <div id="show-product">
+            
         </div>
-
-    </div>
-
-    <!-- slider here -->
-    <div id="interval-div" >
-           <img id="interval" src="https://cdn.plotch.io/image/upload/C/V/1671110178_SG9tZWRlY29yLnBuZw==.png" alt="">
-    </div>
-
-    <!-- Information div -->
-    <div id="info">
-          <img src="https://as1.ftcdn.net/v2/jpg/01/72/40/78/1000_F_172407890_z8qHAeF2tLEh4JAOdEFoCusqpV7pzE8p.jpg" alt="">
-
-          <img src="https://as1.ftcdn.net/v2/jpg/01/84/32/82/1000_F_184328219_7aKgQJfCJ3T6DiAaRSdkJuZZXzaRA7d8.jpg" alt="">
-
-          <img src="https://as2.ftcdn.net/v2/jpg/01/66/89/51/1000_F_166895170_U4WDwhZU7D6wwrWR5bkIiMytySDcJrOd.jpg" alt="">
-
-          <img src="https://t3.ftcdn.net/jpg/02/22/81/32/240_F_222813219_mEdmf9hVmgPSYxUpxCMkJf8HEJCmmOEO.jpg" alt="">
-    </div>
-
-    <!-- img div  -->
-    <div id="img-div" >
-
-        <img src="https://cdn.plotch.io/image/upload/C/V/1671110234_SG9tZWRlY29yLnBuZw==.png" alt="">
-
-        <img src="https://cdn.plotch.io/image/upload/C/V/1671110241_NS5wbmc=.png" alt="">
-
-        <img src="https://cdn.plotch.io/image/upload/C/V/1671110248_Ni5wbmc=.png" alt="">
-
-        <img src="https://cdn.plotch.io/image/upload/C/V/1671110264_My5wbmc=.png" alt="">
 
     </div>
 
     <!-- Footer -->
     <div id="footer">
         <div id="outterfooter">
-
+  
             <div class="footer">
                 <div class="one">
                     <img height="95px"
@@ -195,10 +166,11 @@
             </div>
     
         </div>
-    </div>
-
-
-       
+      </div>
+    
 </body>
 </html>
-<script src="../JS/index.js" ></script>
+<script src="../JS/product.js" >
+
+</script>
+<script src="../JS/index.js"></script>

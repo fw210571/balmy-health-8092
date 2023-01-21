@@ -121,44 +121,10 @@ width: 100%;
     cursor: pointer;
 }
 
-/* Slider */
-/* #TopInterval{
-    
-    width: 100%;
-    /* height: 300px; */
-  /* }
-
-  .swiper{
-    width: 100%;
-    height: 100%;
-  } */
-
-  /* .swiper-wrapper img{
-    width: 100%;
-    object-fit: contain;
-  }
-
-  .swiper .swiper-button-prev, .swiper .swiper-button-next{
-    color: white;
-  } */
-
-  /* .swiper .swiper-pagination-bullet-active{
-    background: white;
-  }
-
-
-  #TopInterval button{
-   background-color:#ff6186;
-   color: black;
-   border-color:#ff6186 ;
-  }
-  #TopInterval button:hover{
-    cursor: pointer;
-    background-color: black ;
-    color: #ff6186;
-  } */ 
-
-
+/* interval image */
+#interval-div > img{
+width: 100%;
+}
 
 /* info styling */
   #info{
