@@ -27,12 +27,13 @@
 
 
     let displayItem  =  document.querySelector("#users-div") ;
-
+    let userNum  =  document.querySelector("#users_num") ;
     // display function
     function showme( data ){
         displayItem.innerHTML = "" ;
       data.forEach( (element) => {
     
+        
             let divcard = document.createElement("div") ;
             
             let id =  document.createElement("p") ;
@@ -54,7 +55,8 @@
              displayItem.append(divcard) ;
         
     }) ;
-    
+    userNum.innerHTML = data.length ;
+
 }
 
 //delete function 

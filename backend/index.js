@@ -14,8 +14,9 @@ app.get("/" , async (req ,res)=>{
 }) ;
 
 app.use( "/users" , userRoute ) ;
-app.use( authentication ) ;
 app.use("/products" , productRoute ) ;
+app.use( authentication ) ;
+
 
 app.listen(process.env.port , async ()=>{
 

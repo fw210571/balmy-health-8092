@@ -1,0 +1,61 @@
+*{
+    text-align: center;
+}
+/* product card styling */
+#product-div{
+    display: grid ;
+    grid-template-columns: repeat(4 , 1fr );
+    background-color: rgb(255, 255, 255) ;
+    gap: 10px ;
+}
+
+#product-div > div {
+    padding: 15px ;
+    text-align: center ;
+    background-color: rgb(255, 255, 255) ;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+#product-div > div:hover, #filter-div > div:hover{
+    cursor: pointer;
+}
+
+#product-div > div > img{
+ width: 300px;
+}
+
+#add-product{
+    display: flex ; 
+    flex-direction: column ;
+    width: 300px ;
+    padding: 40px ;
+}
+
+#add-product>form{
+    display: flex ; 
+    flex-direction: column ;
+    gap: 10px ;
+    background-color:hwb(300 89% 0%) ;
+    padding: 20px ;
+    height: 400px ;
+}
+
+
+#add-product > form > button{
+    height: 30px ;
+    background-color: green;
+    color: white;
+    border-radius: 10px ;
+    border-color:hwb(300 89% 0%) ;
+}
+#add-product > form > button:hover{
+    background-color: greenyellow;
+    cursor: pointer;
+    color: black;
+}
+#add-product > form > input{
+    height: 20px ;
+}
+
