@@ -4,7 +4,7 @@
 let renderProduct =  async ()=>{
     try {
         //fetching data from backend
-        let response = await fetch(`http://localhost:9090/products` , {
+        let response = await fetch(`https://wild-pink-ray-gown.cyclic.app/products` , {
             method : "GET" ,
             headers:{
                 "Content-Type" : "application/json" 
@@ -36,7 +36,7 @@ renderProduct() ;
 let categorizeProduct =  async (query)=>{
     try {
         //fetching data from backend
-        let response = await fetch(`http://localhost:9090/products?category=${query}` , {
+        let response = await fetch(`https://wild-pink-ray-gown.cyclic.app/products?category=${query}` , {
             method : "GET" ,
             headers:{
                 "Content-Type" : "application/json" 
@@ -73,7 +73,7 @@ let asc_dec_Product =  async (order)=>{
 
     try {
         //fetching data from backend
-        let response = await fetch(`http://localhost:9090/products/${order}` , {
+        let response = await fetch(`https://wild-pink-ray-gown.cyclic.app/products/${order}` , {
             method : "GET" ,
             headers:{
                 "Content-Type" : "application/json" 
@@ -123,7 +123,10 @@ let asc_dec_Product =  async (order)=>{
             let desrip =  document.createElement("p") ;
             desrip.innerText = element.description ;
 
-             divu.append( img , title , price , desrip) ;
+            let button = document.createElement("button") ;
+            button.innerText = "ADD TO CART"  ;
+
+             divu.append( img , title , price , desrip ,button) ;
              displayItem.append(divu) ;
     }) ;
     

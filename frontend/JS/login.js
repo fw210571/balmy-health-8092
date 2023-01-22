@@ -12,7 +12,7 @@ login_button.addEventListener("click" , async (event)=>{
     if( email && password ){
         try{
             //requesting the backend to get response 
-            const response = await fetch( "http://localhost:9090/users/login" , {
+            const response = await fetch( "https://wild-pink-ray-gown.cyclic.app/users/login" , {
                 method: "POST" ,
                 headers:{
                     "Content-Type" : "application/json" 

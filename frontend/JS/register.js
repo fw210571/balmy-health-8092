@@ -13,7 +13,7 @@ console.log( "here ")
 
     if( name && email && password ){
         try{
-            const response = await fetch( "http://localhost:9090/users/register" , {
+            const response = await fetch( "https://wild-pink-ray-gown.cyclic.app/users/register" , {
                 method: "POST" ,
                 headers:{
                     "Content-Type" : "application/json" 

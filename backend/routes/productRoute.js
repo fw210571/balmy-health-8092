@@ -2,16 +2,6 @@ const express = require("express") ;
 const productRoute = express.Router() ;
 const { ProductModel } = require("../models/productModel") ;
 
-// productRoute.get("/" , async (req , res)=>{
-    
-//     try{
-
-//     }catch(err){
-
-//     }
-// }) ;
-
-
 productRoute.get("/" , async (req , res)=>{
 
     const search = req.query ;  

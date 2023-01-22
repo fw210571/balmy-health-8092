@@ -5,7 +5,7 @@
 
     try {
         //fetching data from backend
-        let response = await fetch("http://localhost:9090/users/" , {
+        let response = await fetch("https://wild-pink-ray-gown.cyclic.app/users/" , {
             method : "GET" ,
             headers:{
                 "Content-Type" : "application/json"
@@ -68,7 +68,7 @@ delete_button.addEventListener("click" , async ()=>{
 
     if( ID ){
         try{
-            const response = await fetch(`http://localhost:9090/users/delete/${ID}` , {
+            const response = await fetch(`https://wild-pink-ray-gown.cyclic.app/users/delete/${ID}` , {
                 method : "DELETE" ,
                 headers:{
                         "Content-Type" : "application/json"
