@@ -87,12 +87,16 @@ if( refresher ){
 
        let countMID = 1 ;
        let imageMID = document.getElementById("interval") ;
-       let slide_show_mid = ()=>{
-       imageMID.src = imgmidSlideShow[countMID] ;
-       countMID++ ;
-       if(countMID==3){
-          countMID = 0 ;
+
+       if(imageMID ){
+        let slide_show_mid = ()=>{
+            imageMID.src = imgmidSlideShow[countMID] ;
+            countMID++ ;
+            if(countMID==3){
+               countMID = 0 ;
+            }
+            
+         } 
+         setInterval( slide_show_mid , 4500 ) ;
        }
-       
-    } 
-    setInterval( slide_show_mid , 4500 ) ;
+      

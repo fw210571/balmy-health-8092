@@ -2,7 +2,7 @@
 let renderProduct =  async ()=>{
     try {
         //fetching data from backend
-        let response = await fetch(`http://localhost:9090/products` , {
+        let response = await fetch(`https://wild-pink-ray-gown.cyclic.app/products` , {
             method : "GET" ,
             headers:{
                 "Content-Type" : "application/json" 
@@ -60,34 +60,44 @@ function showme( data ){
 }) ;
 } ;
 
-let add_productButton = document.getElementById("product_button") ;
+let add_productButton = document.getElementById("form-product") ;
 
-add_productButton.addEventListener("click" , async (event)=>{
+add_productButton.addEventListener( "submit" , async (event)=>{
       
-    event.defaultPrevented() ;
+    event.preventDefault() ;
+
     
     let title = document.getElementById("title").value ;
     let img = document.getElementById("img").value ;
     let price = document.getElementById("price").value ;
     let category = document.getElementById("category").value ;
     let description = document.getElementById("description").value ;
+    let location = document.getElementById("location").value ;
 
-    const payload = {title , img , price , category , description } ;
+    const payload = {title , img , price , category , description ,location} ;
+
+    //checking details are filled or not 
+if(title && img && price && category && description && location){
 
     try{
-        let response = await fetch(`http://localhost:9090/products/add` , {
-            method : "GET" ,
+        let response = await fetch(`https://wild-pink-ray-gown.cyclic.app/products/add` , {
+            method : "POST" ,
             headers:{
                 "Content-Type" : "application/json" 
             } ,
             body : JSON.stringify(payload) 
         }) ;
         let data = await response.json() ;
-        console.log(data) ;
+
+        alert(data.msg) ;
 
 
     }catch(err){
         console.log(err) ;
-        
+        alert("there is some trouble") ;
     }
+}else{
+    alert("please fill the data first") ;
+}
+   
 } )
